@@ -16,7 +16,7 @@
 #include "lwip/sys.h"
 #include <lwip/netdb.h>
 
-#include "smonitor.h"
+#include "rtmon.h"
 
 #ifdef CONFIG_EXAMPLE_IPV4
 #define HOST_IP_ADDR CONFIG_EXAMPLE_IPV4_ADDR
@@ -114,7 +114,7 @@ static void tcp_client_task(void *pvParameters)
 
 void app_main()
 {
-  smonitor_Init();
+  rtmon_Init();
 
   ESP_ERROR_CHECK(nvs_flash_init());
   ESP_ERROR_CHECK(esp_netif_init());

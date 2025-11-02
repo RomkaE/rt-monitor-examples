@@ -4,6 +4,8 @@
 
 //#include "sdkconfig.h"
 
+#define RTMON_CFG_USE_STATIC_ALOCATION      ( 0 )
+
 #define RTMON_CFG_TASK_STACK_DEPTH          ( 256 )
 
 #define RTMON_CFG_TASKS_MAX_COUNT           ( 8 )

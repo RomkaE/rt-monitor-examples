@@ -28,7 +28,7 @@
 #include "esp_event.h"
 #include "nvs_flash.h"
 
-#include "smonitor.h"
+#include "rtmon.h"
 
 /* Set the SSID and Password via project configuration, or can set directly here */
 #define DEFAULT_SSID CONFIG_EXAMPLE_WIFI_SSID
@@ -118,7 +118,7 @@ static void fast_scan(void)
 
 void app_main(void)
 {
-    smonitor_Init();
+    rtmon_Init();
 
     // Initialize NVS
     esp_err_t ret = nvs_flash_init();

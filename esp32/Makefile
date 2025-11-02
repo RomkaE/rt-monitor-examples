@@ -1,5 +1,6 @@
-PROJECT_NAME := sys-monitor-esp32
 
-EXTRA_COMPONENT_DIRS := smon-component
+PROJECT_NAME := rt-monitor-esp32
+
+EXTRA_COMPONENT_DIRS := rtmon-idf-component
 
 include $(IDF_PATH)/make/project.mk

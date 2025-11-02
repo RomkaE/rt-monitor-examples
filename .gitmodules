@@ -1,0 +1,3 @@
+[submodule "third-party/rt-monitor"]
+	path = third-party/rt-monitor
+	url = git@github.com:RomkaE/rt-monitor.git

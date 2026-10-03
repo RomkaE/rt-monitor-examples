@@ -3,10 +3,13 @@
 #define RTMON_CONFIG_H_
 
 #include "esp_system.h"
+#include "freertos/FreeRTOS.h"
 
 #define RTMON_CFG_USE_STATIC_ALOCATION      ( 0 )
 
 #define RTMON_CFG_TASK_STACK_DEPTH          ( 2048 )
+
+#define RTMON_CFG_TASK_PRIO                 ( configMAX_PRIORITIES - 1 )
 
 #define RTMON_CFG_TASKS_MAX_COUNT           ( 16 )
 

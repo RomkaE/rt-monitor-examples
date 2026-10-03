@@ -6,11 +6,10 @@ list(APPEND srcs ${RTMON_DIR_PATH}/rtmon.c)
 list(APPEND srcs ${RTMON_DIR_PATH}/port/ESP8266/port.c)
 
 set(priv_incs "")
-list(APPEND priv_incs ../config)
 list(APPEND priv_incs ${RTMON_DIR_PATH}/port)
 
 idf_component_register( SRCS ${srcs}
-                        INCLUDE_DIRS ${RTMON_DIR_PATH}
+                        INCLUDE_DIRS ${RTMON_DIR_PATH} ../config
                         PRIV_INCLUDE_DIRS ${priv_incs}
                         REQUIRES )
 

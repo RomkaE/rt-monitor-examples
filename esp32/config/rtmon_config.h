@@ -8,6 +8,8 @@
 
 #define RTMON_CFG_TASK_STACK_DEPTH          ( 2 * 1024 )
 
+#define RTMON_CFG_TASK_PRIO                 ( configMAX_PRIORITIES - 1 )
+
 #define RTMON_CFG_TASKS_MAX_COUNT           ( 16 )
 
 #define RTMON_CFG_UPDATE_PERIOD_MS          ( 1000 )
